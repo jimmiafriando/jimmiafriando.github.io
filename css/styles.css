@@ -1,0 +1,484 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #212529;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+
+.nav-container {
+    box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.25);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    transition: 0.5s;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: auto;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 897px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 15px;
+}
+
+nav ul {
+    display: flex;
+}
+
+.nav-items li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.nav-items li:hover{
+    background: #404245;
+}
+
+.nav-items li a {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Header */
+
+.jumbotron {
+    background: 
+linear-gradient(
+  rgba(12, 3, 3, 0.37), 
+  rgba(0, 0, 0, 0.45)
+),
+url('../assets/jimmi.JPG') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100vh;
+}
+
+.hero-container {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20%;
+}
+
+/* portfolio */
+.container {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+}
+
+.click-img {
+    cursor: pointer;
+    transition: .5s;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.click-img:hover {
+    opacity: 0.3;
+}
+
+/* about */
+
+.about-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    max-width: 800px;
+}
+
+.about-container h5 {
+    padding-left: 30px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.about-container #pading {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+/* contact */
+
+footer {
+    position: relative;
+    bottom: 0px;
+    height: auto;
+    width: 100%;
+    background: #171717;
+}
+
+/* text */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+/* popup */
+
+.bg-popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+.content {
+    margin: auto;
+    width: 1000px;
+    height: 550px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .4);
+}
+
+.content-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.content h3 {
+    color: #171717;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.content h4{
+    color: #171717;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+.content p {
+    text-align: justify;
+    max-width: 900px;
+    margin: auto;
+}
+
+.right {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 940px;
+    cursor: pointer;
+}
+
+/* assets */
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #fdfdfd;
+    margin: 5px;
+}
+
+.button {
+    background-color: #171717;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover{
+background: #404245;
+}
+
+.pading-text {
+    padding-top: 5%;
+    padding-right: 3%;
+}
+
+#pading{
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+.mt-1 {
+    margin-top: 0px;
+}
+
+.pt-1 {
+   padding-top: 2%;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.line {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 12rem;
+    height: 0.25rem;
+    background-color: #fdfdfd;
+    border-radius: 1rem;
+}
+
+.line-1 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 6rem;
+    height: 0.25rem;
+    background-color: #fdfdfd;
+    border-radius: 1rem;
+}
+
+/* mobile */
+@media(min-width:321px) and (max-width:425px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .logo{
+        margin-top: 5%;
+        margin-left: 3%;
+        position: absolute;
+    }
+
+    .nav-container {
+        box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.25);
+        height: 60px;
+        width: 425px;
+        position: fixed;
+        top: 0px;
+        transition: 0.5s;
+    }
+
+    .wrapper {
+        max-width: 425px;
+    }
+    
+    .nav-items {
+        padding-right: 10%;
+    }
+    .nav-items li{
+        display: inline-block;
+        margin-top: 5%;
+        padding:5px;
+    }
+
+
+    .jumbotron {
+        background: 
+    linear-gradient(
+      rgba(12, 3, 3, 0.37), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    url('../assets/jimmi.JPG') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100vh;
+    }
+    
+    .hero-container h2{
+        margin-top: 15%;
+    }
+
+    .about-container{
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+        max-width: 400px;
+        margin-left: 30px; 
+    }
+    .about-container h5 {
+        padding-left: 0px;
+        padding-right: 25px;
+        padding-top: 10px;
+        text-align: justify;
+    }
+    
+    .content {
+        margin: auto;
+        width: 400px;
+        height: auto;
+        background: white;
+        border-radius: 30px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .4);
+    }
+    .mobile {
+        display: none;
+    }
+
+    .about-container #pading {
+        padding-left: 4px;
+        padding-top: 20px;
+    }
+
+    p {
+        padding-top: 2%;
+        padding-left: 10px;
+        padding-right: 10px;
+
+     }
+}
+
+
+
+/* 
+@media(min-width:321px) and (max-width:425px){
+    section#box-profile{
+        width: 90%;
+        height: 630px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30px;
+    }
+    .menu-mobile{
+        top: 20px;
+        right: 10%;
+        display: inline-block;
+    }
+    nav ul{
+        display: none;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        top: 43px;
+        z-index: 99;
+        background: #212529;
+    }
+    nav ul li {
+        float: unset;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .description{
+        padding-left: 0px;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        border: none;
+    }
+    .description .button {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .img-profile .photo{
+        left: 35px;
+        position: relative;
+    }
+    .infomation{
+        top: 75px;
+        margin-left: 35px;
+        font-size: 14px;
+    }
+    section#input-form{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+} */

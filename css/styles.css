@@ -341,7 +341,7 @@ background: #404245;
     }
 
     .logo{
-        margin-top: 5%;
+        margin-top: 2;
         margin-left: 3%;
         position: absolute;
     }
@@ -380,7 +380,8 @@ background: #404245;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height:100vh;
+    height: 600px;
+    width: 100%;
     }
     
     .hero-container h2{
@@ -424,6 +425,9 @@ background: #404245;
         padding-right: 10px;
 
      }
+     html {
+        scroll-behavior: smooth;
+    }
 }
 
 

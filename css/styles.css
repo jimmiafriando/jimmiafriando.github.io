@@ -375,7 +375,11 @@ background: #404245;
       rgba(12, 3, 3, 0.37), 
       rgba(0, 0, 0, 0.45)
     ),
-    url('../assets/jimmi\ 3.svg') no-repeat absolute; 
+    url('../assets/bg-mobile.svg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 600px;
     width: 100%;
     }

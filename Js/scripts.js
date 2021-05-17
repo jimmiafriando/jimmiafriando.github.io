@@ -18,3 +18,13 @@ document.getElementById('close').addEventListener('click',
     function() {
         document.querySelector('.bg-popup').style.display = 'none';
     });
+
+document.getElementById('content2').addEventListener('click',
+    function() {
+        document.querySelector('.bg-popup2').style.display = 'flex';
+    });
+
+document.getElementById('close2').addEventListener('click',
+    function() {
+        document.querySelector('.bg-popup2').style.display = 'none';
+    });

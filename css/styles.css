@@ -97,6 +97,14 @@ url('../assets/jimmi.JPG') no-repeat center center fixed;
     padding-left: 2%;
 }
 
+.porto-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    max-width: 800px;
+}
+
 .container {
     text-align: center;
     margin-right: auto;
@@ -400,6 +408,13 @@ background: #404245;
     
     .hero-container h2{
         margin-top: 15%;
+    }
+
+    .porto-container{
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+        max-width: 400px; 
     }
 
     .about-container{
